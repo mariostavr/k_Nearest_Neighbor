@@ -43,7 +43,7 @@ void swap(double *xp, double *yp) {
 
 void selectionSort(double *dist, int n, int k){
     int i, j, min_idx;
-    for (i=0; i<k; i++){
+    for (i=0; i<k; i++){ //Sort only the first k-elements.
         min_idx = i;
         for (j=i+1; j<n; j++)
             if (dist[j] < dist[min_idx])
